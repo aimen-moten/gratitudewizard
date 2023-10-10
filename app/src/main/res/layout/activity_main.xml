@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFECFB"
+    android:textAlignment="center">
+
+    <TextView
+        android:id="@+id/Heading"
+        android:layout_width="414dp"
+        android:layout_height="200dp"
+        android:background="#283593"
+        android:fontFamily="cursive"
+        android:includeFontPadding="true"
+        android:text="Gratitude Wizard"
+        android:textAlignment="center"
+        android:textColor="#F6F6F8"
+        android:textSize="70sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/base"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="232dp"
+        android:text="Base"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Heading" />
+
+    <TextView
+        android:id="@+id/tipPercentLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="308dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Heading"
+        tools:text="25%" />
+
+    <TextView
+        android:id="@+id/Total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="460dp"
+        android:text="Total"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Heading" />
+
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="384dp"
+        android:text="Tip"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Heading" />
+
+    <EditText
+        android:id="@+id/baseAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:ems="8"
+        android:hint="Bill Amount"
+        android:inputType="numberDecimal"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/base"
+        app:layout_constraintTop_toBottomOf="@+id/Heading" />
+
+    <TextView
+        android:id="@+id/tipAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="56dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/tip"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarTip"
+        tools:text="19.96" />
+
+    <TextView
+        android:id="@+id/totalAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="52dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/Total"
+        app:layout_constraintTop_toBottomOf="@+id/tipAmt"
+        tools:text="103.96" />
+
+    <SeekBar
+        android:id="@+id/seekBarTip"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="28dp"
+        android:max="30"
+        android:thumbTint="#283593"
+        android:tickMarkTint="#283593"
+        app:layout_constraintStart_toEndOf="@+id/tipPercentLabel"
+        app:layout_constraintTop_toBottomOf="@+id/baseAmt" />
+
+    <TextView
+        android:id="@+id/footer"
+        android:layout_width="412dp"
+        android:layout_height="45dp"
+        android:background="#283593"
+        android:fontFamily="cursive"
+        android:text="Made with 💕 by aimenmoten.com"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
